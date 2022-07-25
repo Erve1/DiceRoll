@@ -115,11 +115,11 @@ if (chance < 0.5) {
         message.textContent = "Player 1 Turn"
     }
     if (player1Turn){
-        if (player1Score >= 30 && player2Score < 18) {
+        if (player1Score >= 30 && player2Score < (player1Score - 12)) {
                     message.textContent = "Player 1 Won! 🎉"
                     showResetButton();           
         } 
-        if (player1Score >=30 && player2Score > 17) {
+        if (player1Score >=30 && player2Score > (player1Score - 13)) {
                     message.textContent = "Last Chance for Player 2! 😬"
         }}
         
